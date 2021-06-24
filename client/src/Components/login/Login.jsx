@@ -47,12 +47,11 @@ const valueInput = (event)=>{
         'user': addUser,
         'password': addPassword
     }
-    
      sendData(getUserData)
 }
 
 return(
-    <form action="index.html" className="formContainer" onSubmit={valueInput}>
+    <form className="formContainer" onSubmit={valueInput}>
         <h2>User</h2>
         <fieldset className="formBox">
             <input

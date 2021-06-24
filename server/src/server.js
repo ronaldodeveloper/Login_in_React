@@ -18,5 +18,9 @@ app.post('/user',(req, res)=>{
 
 app.listen(port,(err)=>{
     console.log(`Server connect in localhost:`,port)
-    console.log(`error:`, err)
+    if (err == true){
+        console.log(`status: ERROR!`, err)
+    }else{
+        console.log(`status: server successfully connected!!!`)
+    }  
 })
